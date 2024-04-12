@@ -11,7 +11,7 @@ const Work = () => {
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
-              variants={fadeIn("up, 0.2")}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -20,7 +20,7 @@ const Work = () => {
               My work <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
-              variants={fadeIn("up, 0.4")}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -31,7 +31,7 @@ const Work = () => {
           </div>
           {/* slider */}
           <motion.div
-            variants={fadeIn("down, 0.6")}
+            variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -41,7 +41,17 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      <Bulb />
+      <motion.div
+         variants={fadeIn("right", 0.5)}
+         initial="hidden"
+         animate="show"
+         exit="hidden"
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="w-full absolute left-0 bottom-0 mix-blend-color-dodge"
+
+      >
+        <Bulb />
+      </motion.div>
     </div>
   );
 };

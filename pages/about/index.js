@@ -49,12 +49,16 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Web Design ",
+        stage: "2021 - 2024",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Adobe Design ",
+        stage: "2022 - 2024",
+      },
+      {
+        title: "Photoshop ",
+        stage: "2022 - 2024",
       },
     ],
   },
@@ -62,16 +66,16 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "UX/UI Designer ",
+        stage: "2022 - 2024",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Web Developer ",
+        stage: "2022 - 2024",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Fitted I C T solution - Intern",
+        stage: "2015 - 2020",
       },
     ],
   },
@@ -79,16 +83,16 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Web Development - Parach Academy",
+        stage: "2021 - 2024",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Computer Science Btech - OAUSTECH",
+        stage: "2015 -2020",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certified Computer Engineer - Fiited I C T Solution Academy",
+        stage: "2015 - 2020",
       },
     ],
   },
@@ -105,7 +109,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 right-24 mix-blend-overlay"
+        className="hidden xl:flex absolute -bottom-60 right-24 mix-blend-overlay"
       >
         <Avatar />
       </motion.div>
@@ -160,50 +164,7 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of Experience
-                </div>
-              </div> */}
-              {/* client */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div> */}
-              {/* project */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={550} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
-                </div>
-              </div> */}
-              {/* awards */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={550} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning Awards
-                </div>
-              </div> */}
-              {/* project */}
-              {/* <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-              </div> */}
-            </div>
+           
           </motion.div>
         </div>
 

@@ -20,7 +20,7 @@ const Services = () => {
               My services <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
-              variants={fadeIn("up, 0.4")}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -43,7 +43,17 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
-      <Bulb />
+      <motion.div
+         variants={fadeIn("up", 0.5)}
+         initial="hidden"
+         animate="show"
+         exit="hidden"
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="w-full absolute left-0 bottom-0 mix-blend-color-dodge"
+
+      >
+        <Bulb />
+      </motion.div>
     </div>
   );
 };

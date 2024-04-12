@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Audio } from 'react-loader-spinner'
+
 
 const transitionVariants = {
   initial: {
@@ -17,14 +19,29 @@ const transitionVariants = {
 const Transition = () => {
   return (
     <>
-      <motion.div
+      {/* <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
         exit="exit"
         transition={{ delay: 0.1, duration: 0.2, ease: "easeInOut" }}
-      ></motion.div>
+      ></motion.div> */}
+
+      
+        <motion.Audio
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
+        height="80"
+        width="80"
+        radius="9"
+        color="green"
+        ariaLabel="three-dots-loading"
+        wrapperStyle
+        wrapperClass
+      ></motion.Audio>
+       
+
+      
       
     </>
   );
